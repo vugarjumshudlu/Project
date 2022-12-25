@@ -1,0 +1,546 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: calc(100%-350px);
+    margin-left: 350px;
+}
+
+/* Sidebarın kodlarını yazmağa başladım */
+.sidebar {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    background-color: #002245;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 35px;
+}
+
+.menu{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    
+}
+.menu ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #FFFFFF06;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+#home1{
+    color: red;
+}
+
+.menu ul li:hover a{
+    color: red;
+
+}
+.socialnetwork ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+.socialnetwork{
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+}
+.socialnetwork ul{
+    color: red;
+    display: flex;
+    margin: 10px;
+    list-style-type: none;
+}
+.socialnetwork ul li {
+    color: white;
+    margin: 10px;   
+    padding-left: 5px; 
+}
+/*Sidebarın kodlarını bitirdim*/
+
+/*Content hissənin kodlarını yazmağa başladım*/
+.content {
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+}
+.intro{
+    background-image: url(../images/1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagefrm{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.imagefrm{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/profil1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+    
+}
+
+.imagef::before{
+    content:"";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    background-color:rgba(255,255,255,.08);
+    border-radius: 50%;
+    z-index:-5;
+}
+.imagef{
+    width: 170px;
+    height: 170px;
+    position: relative;
+    border-radius: 50%;
+}
+.intro-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ns{
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.ns span{
+    margin-left: 13px;
+}
+#name{
+    color: white;
+    padding-right: 10px;
+}
+#surname{
+    color: red;
+}
+#slogan{
+    color: white;
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+#name2{
+    color: white;
+}
+#name2 span{
+    color: red;
+}
+
+#name2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Content hissənin kodlarını bitirdim*/
+
+/*Əsas səhifənin kodlarını bitirdim.*/
+
+/*Haqqımda hissəsinin kodlarını yazmağa başladım*/
+
+.about{
+    margin-top: 150px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 150px;
+}
+.bio{
+    height: auto;
+    clear: both;
+    float: left;
+    margin-left: 40px;
+    box-sizing: border-box;
+}
+.bio span{
+    color: red;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.bio h3{
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-top: 10px;
+}
+.allabout{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.left{
+    top: 0px;
+    left: 0px;
+    margin-right: 50px;
+}
+.leftimg{
+    width: 291px;
+    height: 340px;
+    box-sizing: border-box;
+    top: 0px;
+    margin-left: 40px;
+    background-image: url(../images/profil2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.right{
+    top: 0px;
+    left: 0px;
+    margin-right: 50px;
+}
+.nstitle span{
+    color: red;
+}
+.nstitle h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 2;
+
+}
+.text span{
+    color:red
+}
+.img{
+    width: 291px;
+    height: 340px;
+    box-sizing: border-box;
+    top: 0px;
+    margin-left: 40px;
+    background-image: url(../images/profil2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.shortinfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.shortinfo2{
+    padding-left: 100px;
+}
+
+.shortinfo label{
+    font-weight: 600;
+}
+.shortinfo div ul li{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    line-height: 2;
+}
+.shortinfo div ul li i{
+    color: red;
+}
+
+.dwncv{
+    width: 130;
+    height: 32;
+    margin-top: 30px;
+    background-color: red;
+    padding: 12px 45px 12px 45px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: .5px;
+    line-height: 30px;
+    margin-bottom: 150px; 
+}
+.dwncv a{
+    color: white;
+    text-decoration: none;
+}
+/*Haqqımda hissəsinin kodlarını yazmağı bitirdim*/
+
+/*Məqalə hissəsinin kodlarını yazmağa başladım*/
+.article{
+    height: 100%;
+    background-color: #f9f9f9; 
+}
+.articleinf{
+    margin-left: 40px;
+    padding-top: 150px;
+}
+.articleinf span{
+    color: red;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.articleinf h3{
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-top: 10px;
+}
+.articlebox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 80px;
+    margin-bottom: 38px;
+    margin-left: 40px;
+}
+.articlebox i{
+    font-size: 50px;
+    margin-bottom: 17px;
+    color: red;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+.articlebox h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: .5px;
+    margin-left: 40px;
+    color: #000;
+}
+.articlebox p{
+    font-family: 'mulish', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: .5px;
+    word-wrap: break-word;
+    font-weight: 400;
+    margin: 40px;
+}
+.box{
+    width: 244.438px;
+    height: 420.396px;
+    background-color: white;
+    margin-right: 45px;
+    margin-bottom: 45px;
+}
+.box:hover{
+    box-shadow: 0 0 20px rgb(0 0 0 / 9%);
+    transition: all .3s ease;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.working{
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: .5px;
+    padding-bottom: 100px;
+
+}
+.working p{
+    display: inline-block;
+}
+.working a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000
+}
+/*Məqalə hissəsinin kodlarını yazmağı bitirdim*/
+
+/*Portfolio hissəsinin kodlarını yazmağa başladım*/
+
+/*Portfolio başlanğıc info yazısı*/
+.portfolioinf{
+    margin-left: 40px;
+    padding-top: 150px;
+}
+.portfolioinf span{
+    color: red;
+    display: inline-block;
+    font-family: poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.portfolioinf h3{
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin-top: 10px;
+}
+/*Portfolio info yazısı bitdi*/
+/*Work box*/
+.portfolio .box1,.box2,.box3,.box4,.box5,.box6{
+    width: 244.438px;
+    height: 244.438px;
+    margin-right: 42px;
+    margin-bottom: 42px;
+}
+.portfolioboxs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 38px;
+    margin-left: 40px;
+}
+#portfoliobox:hover{
+    transform: scale(1.1) translateZ(0);
+    transition: .5s;
+}
+.box1{
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.box2{
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.box3{
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.box4{
+    background-image: url(../images/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.box5{
+    background-image: url(../images/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+.box6{
+    background-image: url(../images/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+/*Work box finished*/
+/*Counter*/
+.counters{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-image: url(../images/ravenna.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+.counters h3{
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+}
+.counters span{
+    line-height: 2;
+    letter-spacing: .5px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: white;
+}
+.counter{
+    margin: 20px;
+    position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Counter finished*/
+/*Portfolio hissəsinin kodlarını yazmağı bitirdim*/
+
+/*Mənim haqqımda nə deyirlər hissəsini yazmağa başladım*/
